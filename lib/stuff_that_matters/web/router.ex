@@ -17,6 +17,7 @@ defmodule StuffThatMatters.Web.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/issues", IssueController
   end
 
   # Other scopes may use custom stacks.
