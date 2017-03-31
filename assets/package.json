@@ -8,9 +8,7 @@
   },
   "dependencies": {
     "phoenix": "file:../deps/phoenix",
-    "phoenix_html": "file:../deps/phoenix_html"
-  },
-  "devDependencies": {
+    "phoenix_html": "file:../deps/phoenix_html",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
@@ -24,6 +22,8 @@
     "style-loader": "^0.16.1",
     "url-loader": "^0.5.8",
     "webpack": "^2.3.2",
+  },
+  "devDependencies": {
     "webpack-dev-server": "^2.4.2"
   }
 }
