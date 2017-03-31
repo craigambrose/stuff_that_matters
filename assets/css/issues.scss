@@ -1,0 +1,39 @@
+$text-padding: 10px;
+
+.issue {
+  h1 {
+    margin: 0px;
+    padding: $text-padding;
+    background-color: silver;
+  }
+
+  .your-position {
+    background-color: #EEEEEE;
+    padding: $text-padding - 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+
+    .position {
+    }
+  }
+
+  .argument {
+    padding: $text-padding - 1px;
+    border: 1px solid #999;
+
+    .prefix {
+      color: #999;
+    }
+
+    h2 {
+      margin: 0px 0px $text-padding 0px;
+    }
+
+    .details {
+
+    }
+  }
+}

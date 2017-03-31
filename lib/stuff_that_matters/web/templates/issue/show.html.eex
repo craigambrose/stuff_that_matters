@@ -1,13 +1,27 @@
-<h2>Show Issue</h2>
+<article class="issue">
+  <h1><%= @issue.name %></h2>
 
-<ul>
+  <div class="your-position">
+    <div class="position">No</div>
+    <div>|</div>
+    <div class="position">Yes</div>
+  </div>
 
-  <li>
-    <strong>Name:</strong>
-    <%= @issue.name %>
-  </li>
+  <div class="argument">
+    <div class="prefix">some people think that...</div>
+    <h2>Vaccinations are safe because there hasn't been mercury in them for ten years.</h2>
+    <div class="details">
+      <div class="detail-area">
+        245 comments
+      </div>
+      <div class="detail-area">
+        15 supporting sources
+      </div>
+      <div class="detail-area">
+        3 disputing sources
+      </div>
 
-</ul>
+    </div>
+  </div>
 
-<span><%= link "Edit", to: issue_path(@conn, :edit, @issue) %></span>
-<span><%= link "Back", to: issue_path(@conn, :index) %></span>
+</article>
