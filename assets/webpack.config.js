@@ -5,7 +5,7 @@ const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-// require("font-awesome-webpack")
+require("font-awesome-webpack")
 
 /*
  * Configuration
@@ -21,7 +21,7 @@ module.exports = (env) => {
 
     entry: {
       app: [
-        "font-awesome-webpack",
+        // "font-awesome-webpack",
         "js/app.js",
         "css/app.css"
       ]
