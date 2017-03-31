@@ -8,8 +8,7 @@
     <meta name="author" content="">
 
     <title>Stuff That Matters</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/vendor.css") %>">
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <%= {:safe, css_link_tag() } %>
   </head>
 
   <body>
@@ -21,7 +20,8 @@
         <%= render @view_module, @view_template, assigns %>
       </main>
 
-    </div> <!-- /container -->
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    </div>
+
+    <%= {:safe, js_script_tag() } %>
   </body>
 </html>

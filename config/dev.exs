@@ -4,15 +4,16 @@ use Mix.Config
 # debugging and code reloading.
 #
 # The watchers configuration can be used to run external
-# watchers to your application. For example, we use it
-# with brunch.io to recompile .js and .css sources.
+# watchers to your application.
 config :stuff_that_matters, StuffThatMatters.Web.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
-                    cd: Path.expand("../assets", __DIR__)]]
+  watchers: [
+    node: ["node_modules/.bin/webpack-dev-server", "--inline", "--colors", "--hot", "--stdin", "--host", "localhost", "--port", "8080", "--public", "localhost:8080",
+    cd: Path.expand("../assets", __DIR__)
+  ]]
 
 # ## SSL Support
 #
@@ -34,8 +35,8 @@ config :stuff_that_matters, StuffThatMatters.Web.Endpoint,
 config :stuff_that_matters, StuffThatMatters.Web.Endpoint,
   live_reload: [
     patterns: [
-      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
-      ~r{priv/gettext/.*(po)$},
+      # ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
+      # ~r{priv/gettext/.*(po)$},
       ~r{lib/stuff_that_matters/web/views/.*(ex)$},
       ~r{lib/stuff_that_matters/web/templates/.*(eex)$}
     ]
