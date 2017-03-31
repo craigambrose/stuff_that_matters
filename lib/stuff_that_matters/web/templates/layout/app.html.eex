@@ -8,6 +8,7 @@
     <meta name="author" content="">
 
     <title>Stuff That Matters</title>
+    <script src="https://use.fontawesome.com/12690653f1.js"></script>
     <%= {:safe, css_link_tag() } %>
   </head>
 
