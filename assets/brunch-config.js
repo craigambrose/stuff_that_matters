@@ -21,12 +21,16 @@ exports.config = {
       // }
     },
     stylesheets: {
-      joinTo: "css/app.css"
+      joinTo: {
+        "css/vendor.css": /^css\/vendor/,
+        "css/app.css": [/^css\/[^vendor]/]
+      }
     },
     templates: {
       joinTo: "js/app.js"
     }
   },
+  // : ["node_modules/purecss/build/pure-min.css", "css/app.css"]
 
   conventions: {
     // This option sets where we should place non-css and non-js assets in.
