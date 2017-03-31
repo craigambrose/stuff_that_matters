@@ -1,6 +1,6 @@
 /* This file is for your main application css. */
-
-@import 'issues'
+@import "node_modules/purecss/build/pure";
+@import 'issues';
 
 body {
   padding: 0;
