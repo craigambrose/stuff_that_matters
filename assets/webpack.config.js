@@ -21,7 +21,7 @@ module.exports = (env) => {
 
     entry: {
       app: [
-        // "font-awesome-webpack",
+        "font-awesome-webpack",
         "js/app.js",
         "css/app.css"
       ]
