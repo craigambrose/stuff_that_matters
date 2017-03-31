@@ -12,14 +12,16 @@
     <h2>Vaccinations are safe because there hasn't been mercury in them for ten years.</h2>
     <div class="details">
       <div class="detail-area">
-        <i class="fa fa-comments"></i>
-        245 comments
+        <i class="fa fa-comments detail-icon"></i>
+        <div class="detail-description">245 comments</div>
       </div>
       <div class="detail-area">
-        15 supporting sources
+        <i class="fa fa-file-text detail-icon"></i>
+        <div class="detail-description">15 supporting sources</div>
       </div>
       <div class="detail-area">
-        3 disputing sources
+        <i class="fa fa-file-text-o detail-icon"></i>
+        <div class="detail-description">3 disputing sources</div>        
       </div>
 
     </div>

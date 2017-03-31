@@ -1,10 +1,11 @@
-$text-padding: 10px;
+$text-padding: 15px;
 
 .issue {
   h1 {
     margin: 0px;
     padding: $text-padding;
     background-color: silver;
+    font-size: 24px;
   }
 
   .your-position {
@@ -29,11 +30,27 @@ $text-padding: 10px;
     }
 
     h2 {
-      margin: 0px 0px $text-padding 0px;
+      margin: 4px 0px $text-padding 0px;
+      font-size: 20px;
     }
 
     .details {
+      .detail-area {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
 
+        .detail-icon {
+          font-size: 30px;
+          display: block;
+          width: 40px;
+          color: #999999;
+        }
+
+        .detail-description {
+          padding-top: 5px;
+        }
+      }
     }
   }
 }
