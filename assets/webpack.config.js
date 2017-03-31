@@ -5,7 +5,7 @@ const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-// const autoprefixer = require("autoprefixer");
+// require("font-awesome-webpack")
 
 /*
  * Configuration
@@ -21,6 +21,7 @@ module.exports = (env) => {
 
     entry: {
       app: [
+        "font-awesome-webpack",
         "js/app.js",
         "css/app.css"
       ]
@@ -34,6 +35,9 @@ module.exports = (env) => {
 
     module: {
       rules: [
+        { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+        { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
+
         // {
         //   test: /\.(jsx?)$/,
         //   exclude: /node_modules/,
