@@ -49,6 +49,18 @@ module.exports = (env) => {
         // },
 
         {
+          test: /\.(jsx?)$/,
+          exclude: /(node_modules)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['env', 'react'],
+              plugins: ["syntax-jsx"]
+            }
+          }
+        },
+
+        {
           test: /\.(gif|png|jpe?g|svg)$/i,
           exclude: /node_modules/,
           loaders: [
