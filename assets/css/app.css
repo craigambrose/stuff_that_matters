@@ -1,5 +1,6 @@
 /* This file is for your main application css. */
 @import "node_modules/purecss/build/pure";
+@import 'card-stack';
 @import 'issues';
 
 body {

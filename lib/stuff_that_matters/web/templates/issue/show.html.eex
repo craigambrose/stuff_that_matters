@@ -7,8 +7,10 @@
     <div class="position">Yes</div>
   </div>
 
+  <div class="prefix">some people think that...</div>
   <div id="argument-stack"></div>
-  <div class="argument">
+
+  <!-- <div class="argument">
     <div class="prefix">some people think that...</div>
     <h2>Vaccinations are safe because there hasn't been mercury in them for ten years.</h2>
     <div class="details">
@@ -24,9 +26,8 @@
         <i class="fa fa-file-text-o detail-icon"></i>
         <div class="detail-description">3 disputing sources</div>
       </div>
-
     </div>
-  </div>
+  </div> -->
 
 </article>
 

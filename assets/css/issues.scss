@@ -8,6 +8,13 @@ $text-padding: 15px;
     font-size: 24px;
   }
 
+  .prefix {
+    padding: $text-padding;
+    padding-bottom: 0px;
+    margin-bottom: -15px;
+    color: #999;
+  }
+
   .your-position {
     background-color: #EEEEEE;
     padding: $text-padding - 1px;
@@ -24,10 +31,7 @@ $text-padding: 15px;
   .argument {
     padding: $text-padding - 1px;
     border: 1px solid #999;
-
-    .prefix {
-      color: #999;
-    }
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 
     h2 {
       margin: 4px 0px $text-padding 0px;
@@ -53,81 +57,4 @@ $text-padding: 15px;
       }
     }
   }
-}
-
-.master-root {
-  margin:20px auto;
-  position:relative;
-  min-height:300px;
-  max-height:100px;
-  width:300px;
-  overflow:hidden;
-  border:1px solid #e5e5e5
-}
-.card {
-  background-color:#fff;
-  background-size:cover;
-  position:absolute;
-  background:#f8f3f3;
-  height:200px;
-  width:180px;
-  margin:0 auto;
-  -webkit-transition:box-shadow .3s;
-  transition:box-shadow .3s;
-  box-shadow:0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
-  cursor:pointer
-}
-.animate {
-  -webkit-transition:-webkit-transform .3s;
-  transition:-webkit-transform .3s;
-  transition:transform .3s;
-  transition:transform .3s,-webkit-transform .3s
-}
-.animate,.inactive {
-  box-shadow:none
-}
-.alert {
-  width:45%;
-  min-height:10%;
-  position:absolute;
-  z-index:9999;
-  opacity:0;
-  -webkit-transition:opacity .5s;
-  transition:opacity .5s;
-  color:#fff;
-  vertical-align:middle;
-  line-height:3rem
-}
-.alert-visible {
-  opacity:1
-}
-.alert-right {
-  top:0;
-  right:0;
-  background:green;
-  border-top-left-radius:50px;
-  border-bottom-left-radius:50px
-}
-.alert-left {
-  top:0;
-  left:0;
-  background:red;
-  border-top-right-radius:50px;
-  border-bottom-right-radius:50px
-}
-.alert-top {
-  background:purple;
-  border-radius:50px
-}
-.alert-bottom,.alert-top {
-  -webkit-transform:translate(-50%);
-  -ms-transform:translate(-50%);
-  transform:translate(-50%);
-  margin-left:50%
-}
-.alert-bottom {
-  bottom:0;
-  background:blue;
-  border-top-left-radius:50px;
-  border-radius:50px
 }
