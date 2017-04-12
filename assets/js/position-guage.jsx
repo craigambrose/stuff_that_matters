@@ -31,7 +31,7 @@ function PosisionGuage(props) {
   }
 
   return (
-    <div>
+    <div className="position-guage-container">
       <Doughnut data={data} options={options} />
     </div>
   )
